@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+}
+html {
+  /* font-size: 62.5%;/ */
+  scroll-behavior: smooth;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.8rem 8rem;
+  width: 100%;
+  background-color: rgb(235, 227, 227);
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+.nav-left {
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.nav-right-item {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin-right: 1rem;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.5);
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+}
+.nav-right-item:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.landing {
+  padding: 24rem 0;
+   background-image: linear-gradient(
+      to right bottom,
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.1)
+    ),
+     url(./landing-bg.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.landing-content {
+  text-align: center;
+  font-size: 1.6rem;
+  color: #fff;
+  text-transform: capitalize;
+}
+.landing-content-title {
+  font-weight: 400;
+  letter-spacing: 0.3rem;
+}
+.landing-content-description {
+  font-weight: 500;
+  font-size: 1.6rem;
+  margin-top: 0.4rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+.landing-button {
+  display: inline-block;
+
+  text-decoration: none;
+  color: #fff;
+  border: 2px solid rgb(138, 133, 133);
+  padding: 0.3rem 0.8rem;
+  font-size: 1.5rem;
+  border-radius: 0.3rem;
+  margin-top: 3rem;
+  outline: none;
+  transition: all 0.3s;
+}
+.landing-button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+#section2 {
+  font-size: 2.2rem;
+  width: 100%;
+}
+
+.rest-title {
+  margin-top: 0.8rem;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.rest-description {
+  margin-bottom: 0.8rem;
+  text-align: center;
+  font-size: 2.3rem;
+  color: rgb(201, 32, 32);
+  border-bottom: 0.8px solid rgba(0, 0, 0, 0.2);
+}
+.feedback-form {
+  width: 42%;
+  margin: 0 auto;
+  background-color: rgb(207, 207, 20);
+  border-radius: 2px;
+  padding: 2rem;
+}
+
+.input-label {
+  display: block;
+  font-size: 1.6rem;
+  margin-bottom: 0.2rem;
+  margin-top: 0.8rem;
+  text-transform: capitalize;
+}
+
+.input-field {
+  font-size: 1.4rem;
+  background-color: #fff;
+  width: 72%;
+  outline: none;
+  border: none;
+  padding: 0.8rem;
+  border-radius: 0.4rem;
+}
+
+.form-dropdown {
+  width: 72%;
+  outline: none;
+  padding: 0.8rem;
+  font-size: 1.6rem;
+  text-transform: capitalize;
+}
+.form-dropdown-options {
+  font-size: 1.6rem;
+  text-transform: capitalize;
+}
+.radio-title {
+  font-size: 1.5rem;
+  margin-top: 0.2rem;
+}
+
+.checkbox-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+.input-field-textarea {
+  min-height: 14rem;
+  width: 100%;
+}
+
+.input-button {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 0.4rem;
+  transition: all 0.3s;
+}
+.input-button:hover {
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+.About {
+  min-height: 100vh; /* view Height means everything that is visible to me */
+  background-image: url(./food.jpg);
+  background-size: cover;
+}
+
+.text-gradient {
+  background-image: linear-gradient(to right, #7ed56f, #28b485);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.extraBold {
+  font-weight: 1000;
+  letter-spacing: 1px;
+}
+
+.special {
+  background-image: linear-gradient(to right, rgba(0, 0, 0), rgba(0, 0, 0, 0.5)),
+    url(../static/footer.jpg);
+  background-size: cover;
+}

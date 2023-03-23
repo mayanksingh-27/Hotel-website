@@ -1,0 +1,56 @@
+<head>
+    <link rel="stylesheet" href="../static/style.css" />
+</head>
+<body>
+    <h2 class="rest-title">Babu ka shona</h2>
+    <h4 class="rest-description">Restaurant Feedback form</h4>
+    <form class="feedback-form" action="/form" method="post">
+        <label for="name"  class="input-label" >Name</label>
+        <input id="name" placeholder='Enter Your Name' type="text" class="input-field" name='name'></input>
+        <label for="email" class="input-label">Email</label>
+        <input id="email" placeholder='Enter Your Email' type="email" class="input-field"  name='email' ></input>
+        <br/>
+        <label  class="input-label" >Location You Visited</label>
+        <select class="form-dropdown" name="dropdown">
+            <option class="form-dropdown-options" value="Bandra" selected>Bandra</option>
+            <option class="form-dropdown-options" value="worli" >worli</option>
+            <option class="form-dropdown-options" value="Ghatkopar" >Ghatkopar</option>
+            <option class="form-dropdown-options" value="Church Gate" >Church Gate</option>
+          </select>
+          <br />
+          <label  class="input-label" >Dine in / take out</label> 
+               <div class="checkbox-label" >
+                  <label for="radio1" class="input-label">Dine In</label>
+                  <input id="radio1" name="papa" type="radio" value="Dine in" ></input>
+              </div>
+              <div class="checkbox-label" >
+                  <label for="radio1" class="input-label">Take Out</label>
+                  <input id="radio1" name="papa" type="radio" value="Take out"></input>
+              </div>
+              <label  class="input-label" >Things that should be improved in future</label>
+              <label  class="input-label" >(Check all that apply)</label>
+              <div class="checkbox-label" >
+                  <label for="checkbox-1" class="input-label">Food Quality</label>
+                  <input id="checkbox-1" type="checkbox" name='improve' value="Food Quality"> </input>
+              </div>
+              <div class="checkbox-label" >
+                  <label for="checkbox-2" class="input-label">Services</label>
+                  <input id="checkbox-2" type="checkbox" name='improve' value="Services"></input>
+              </div>
+              <div class="checkbox-label" >
+                  <label for="checkbox-3" class="input-label">Interiors</label>
+                  <input id="checkbox-3" type="checkbox" name='improve' value="Interiors"></input>
+              </div>
+              <div class="checkbox-label" >
+                  <label for="checkbox-4" class="input-label">Menu</label>
+                  <input id="checkbox-4" type="checkbox" name='improve' value="Menu"></input>
+              </div>
+              <div class="checkbox-label" >
+                  <label for="checkbox-5" class="input-label">Food Taste</label>
+                  <input id="checkbox-5" type="checkbox" name='improve' value="Food Taste"></input>
+              </div>
+              <label for="textarea" class="input-label" >Any Comments or Suggestions ?</label>
+              <textarea id="textarea" class="input-field input-field-textarea" name='message'></textarea>
+              <input type="submit" value="Submit" class="input-button" >
+    </form>
+</body>
